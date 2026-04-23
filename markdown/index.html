@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <meta name="description" content="Presentation layout">
+  <meta name="author" content="Daniele Savasta">
+  <link rel="stylesheet" href="lib/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  
+  <script src="lib\markdown-it.min.js"></script>
+  <script src="lib\markdown-it-container.min.js"></script>
+  <script src="lib\swiper-bundle.min.js"></script>
+  <script src="lib\zooming.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="trail"></div>
+<div class="swiper-container">
+    <div class="swiper-wrapper" id="markdown" w3-include-html="presentation.md">
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<script src="lib/start.js"></script>
+</body>
+</html>
