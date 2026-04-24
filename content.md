@@ -1,13 +1,12 @@
 ::: swiper-slide
 
 <div class="map-slide">
-  <div class="map-title">Generative Thinking Hierarchy Map</div>
+  <h3 class="map-title">Generative/Computational Media Map</h3>
 
   <div class="map-entry-row">
     <div class="map-node entry" onclick="swiperInstance.slideTo(1,400)">Media Anatomy</div>
   </div>
-  <div class="map-connector"></div>
-
+  
   <div class="map-row">
     <div class="map-label">Foundation<br>Principles</div>
     <div class="map-cards">
@@ -17,8 +16,7 @@
       <div class="map-node" onclick="swiperInstance.slideTo(5,400)">Co-existence</div>
     </div>
   </div>
-  <div class="map-connector"></div>
-
+  
   <div class="map-row">
     <div class="map-label">Properties</div>
     <div class="map-cards">
@@ -28,8 +26,7 @@
       <div class="map-node" onclick="swiperInstance.slideTo(9,400)">Limits</div>
     </div>
   </div>
-  <div class="map-connector"></div>
-
+  
   <div class="map-row">
     <div class="map-label">Process</div>
     <div class="map-cards">
@@ -38,8 +35,7 @@
       <div class="map-node process" onclick="swiperInstance.slideTo(12,400)">Randomness / Chaos / Accident / Entropy</div>
     </div>
   </div>
-  <div class="map-connector"></div>
-
+  
   <div class="map-row">
     <div class="map-label">Meaning<br>Making</div>
     <div class="map-cards">
@@ -48,8 +44,7 @@
       <div class="map-node" onclick="swiperInstance.slideTo(15,400)">Lore</div>
     </div>
   </div>
-  <div class="map-connector"></div>
-
+  
   <div class="map-row">
     <div class="map-label">Tools</div>
     <div class="map-cards">
@@ -63,7 +58,7 @@
 
 ::: swiper-slide
 
-## Media Anatomy
+# Media Anatomy
 
 Every digital media object (image, sound, video, interactive system) shares the same underlying structure. Understanding that structure is the first step toward working with it intentionally.
 
@@ -73,7 +68,7 @@ Every digital media object (image, sound, video, interactive system) shares the 
 
 ##### Foundation Principles
 
-## Numerical Representation
+# Numerical Representation
 
 Every media object consists of digital code: mathematically definable, open to algorithmic manipulation. Media becomes programmable.
 
@@ -85,7 +80,7 @@ A photograph is a grid of numbers. A sound is a sequence of values. This numeric
 
 ##### Foundation Principles
 
-## Procedurality
+# Procedurality
 
 The procedure (the algorithm, the instruction set) is often the artwork itself, not just the means of making it.
 
@@ -97,7 +92,7 @@ You write the rules; the rules write the world. The artist is the author of cond
 
 ##### Foundation Principles
 
-## Crossing Senses / Intermediality
+# Crossing Senses / Intermediality
 
 The same data moves between mediums: sound becoming light, movement becoming image, text becoming space.
 
@@ -109,7 +104,7 @@ Media is not locked to one sense or form. Intermediality is letting one data sou
 
 ##### Foundation Principles
 
-## Co-existence
+# Co-existence
 
 The simultaneous presence of analog and digital, physical and virtual, human and nonhuman within the same system or space.
 
@@ -121,7 +116,7 @@ Co-existence is about designing the relationship between these registers: how th
 
 ##### Properties
 
-## Generativity / Variation
+# Generativity / Variation
 
 How changing one variable produces an entire family of related but distinct forms, sounds, or behaviors.
 
@@ -133,7 +128,7 @@ The artist designs the conditions; the system generates the instances. Variation
 
 ##### Properties
 
-## Modularity / Repetition
+# Modularity / Repetition
 
 A small repeating element, when scaled and layered, becomes something structurally new.
 
@@ -145,7 +140,7 @@ The module retains its identity while contributing to a larger whole. At scale, 
 
 ##### Properties
 
-## Connectivity / Network
+# Connectivity / Network
 
 How devices, sensors, spaces, and people share information and collectively respond to the world.
 
@@ -157,7 +152,7 @@ A connected system is not the sum of its parts. It is the sum of its relationshi
 
 ##### Properties
 
-## Limits
+# Limits
 
 Origins. Constraints. Dataset. Pool. Source.
 
@@ -169,7 +164,7 @@ Every system is defined as much by what it cannot do as by what it can. Limits a
 
 ##### Process
 
-## Profanation / Appropriation
+# Profanation / Appropriation
 
 Taking something from one context and returning it to common use in a different one. Not destruction. Displacement.
 
@@ -181,7 +176,7 @@ The same material, made to mean something else.
 
 ##### Process
 
-## Edit / Abandon
+# Edit / Abandon
 
 The generative process produces more than you intend. At some point: intervene and edit, or abandon and let the system run again.
 
@@ -193,7 +188,7 @@ This is not failure. It is the practice. The decision defines the relationship b
 
 ##### Process
 
-## Randomness / Chaos / Accident / Serendipity / Letting Go / Entropy
+# Randomness / Chaos / Accident / Serendipity / Letting Go / Entropy
 
 The system produces things you did not plan. Some are more interesting than anything you could have planned.
 
