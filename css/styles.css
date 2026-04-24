@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'drukwidebold';
-  src: url('/css/DrukWideBold.ttf') format('truetype');
+  src: url('../css/DrukWideBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -55,7 +55,7 @@ body {
 }
 
 .slideContent {
-  padding: 2rem 2rem;
+  padding: 1rem;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -84,7 +84,8 @@ h6 {
 
 h1 {
   color: var(--title-color);
-  font-size: 6rem;
+  font-size: 4rem;
+  text-transform: uppercase;
   margin-bottom: calc(var(--margin-unit) * 1.5);
   line-height: .95;
   font-weight: 400;
@@ -116,6 +117,7 @@ h4 {
 
 h5,
 h6 {
+  margin:0;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -123,16 +125,21 @@ h6 {
 }
 
 /* Body text and paragraphs */
-p, table {
+p,
+table {
   font-size: 1rem;
   font-family: var(--secondary-font);
   margin-bottom: var(--margin-unit);
   widows: 3;
   orphans: 3;
-  max-width: 36em;
+  max-width: 24em;
 }
 
-td {border-left:1px solid rgb(0, 0, 0); padding: 0.5rem;}
+td {
+  border-left: 1px solid rgb(0, 0, 0);
+  padding: 0.5rem;
+}
+
 /* Code and pre-formatted text */
 pre {
   font-size: 0.875rem;
@@ -569,16 +576,14 @@ h1 span:hover {
 
 .map-label {
   font-family: var(--secondary-font);
-  font-size: 0.35rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  opacity: 0.45;
+  opacity: 0.75;
   min-width: 72px;
   max-width: 72px;
-  text-align: right;
-  line-height: 1.4;
-  flex-shrink: 0;
+  line-height: 1.0;
+  color: var(--title-color);
 }
 
 .map-cards {
@@ -601,7 +606,9 @@ h1 span:hover {
   user-select: none;
   line-height: 1.35;
 }
-
+.map-title {
+font-family: var(--primary-font);
+}
 .map-node:hover {
   background: var(--title-color);
   transform: translateY(-2px);
@@ -609,7 +616,6 @@ h1 span:hover {
 }
 
 .map-node.entry {
-  
   padding: 0.4rem 0.9rem;
 }
 

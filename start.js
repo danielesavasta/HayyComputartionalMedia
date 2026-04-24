@@ -201,18 +201,8 @@ function initDrawer() {
 }
 
 /* ---------- Main start ---------- */
+/* ---------- Main start ---------- */
 async function start() {
-  // 1. Fetch data sources in parallel
-  const [json, galleryImages] = await Promise.all([getData(), getGalleryImages()]);
-
-  // 2. Render markdown content slides
-  var jsText = "";
-  if (json && json["slides"]) {
-    for (var slide in json["slides"]) {
-      jsText += `\n ::: swiper-slide` + "\n" + json["slides"][slide] + `![](assets/` + slide + `) \n ::: \n `;
-    }
-  }
-
   var mdText = document.getElementById("markdown").innerHTML;
   var md = window.markdownit();
   md.set({ html: true, breaks: true, typographer: true });
@@ -230,24 +220,15 @@ async function start() {
     }
   });
 
-  document.getElementById("markdown").innerHTML = md.render(mdText + jsText);
+  document.getElementById("markdown").innerHTML = md.render(mdText);
 
   // 3. Tag content slides with data-slide-id
   var contentSlides = document.querySelectorAll(".swiper-wrapper .swiper-slide");
   contentSlides.forEach(function (s, i) { s.dataset.slideId = "content-" + i; });
 
-  // 4. Create gallery image slides
-  var wrapper = document.querySelector(".swiper-wrapper");
-  galleryImages.forEach(function (filename) {
-    var div = document.createElement("div");
-    div.className = "swiper-slide full";
-    div.dataset.slideId = "gallery-" + filename;
-    div.innerHTML = '<img src="assets/' + filename + '" alt="' + filename.replace(/"/g, '') + '">';
-    wrapper.appendChild(div);
-  });
+  
 
-  // 5. Apply saved order from localStorage (before Swiper init)
-  applySavedOrder(wrapper);
+
 
   // 6. Init Swiper
   swiperInstance = new Swiper('.swiper-container', {
@@ -277,6 +258,34 @@ async function start() {
 
   // 9. Zooming
   new Zooming().listen('img');
+}
+
+
+async function autoGallery(){
+
+    // 1. Fetch data sources in parallel
+  const [json, galleryImages] = await Promise.all([getData(), getGalleryImages()]);
+
+  // 2. Render markdown content slides
+  var jsText = "";
+  if (json && json["slides"]) {
+    for (var slide in json["slides"]) {
+      jsText += `\n ::: swiper-slide` + "\n" + json["slides"][slide] + `![](assets/` + slide + `) \n ::: \n `;
+    }
+  }
+
+  // 4. Create gallery image slides
+  var wrapper = document.querySelector(".swiper-wrapper");
+  galleryImages.forEach(function (filename) {
+    var div = document.createElement("div");
+    div.className = "swiper-slide full";
+    div.dataset.slideId = "gallery-" + filename;
+    div.innerHTML = '<img src="assets/' + filename + '" alt="' + filename.replace(/"/g, '') + '">';
+    wrapper.appendChild(div);
+  });
+
+    // 5. Apply saved order from localStorage (before Swiper init)
+  applySavedOrder(wrapper);
 }
 
 function slideFix() {
