@@ -81,25 +81,33 @@ h1 {
 }
 
 h2 {
+    margin:0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-feature-settings: 'smcp' 1;
+  /*
   font-size: 2.618rem;
   margin: 0;
   font-family: var(--secondary-font);
   font-weight: 300;
-  /*margin-top: calc(var(--margin-unit) * 1.5);*/
+  margin-top: calc(var(--margin-unit) * 1.5);*/
 }
 
 h3 {
   color: var(--title-color);
   font-family: var(--secondary-font);
-  font-size: 1.618rem;
+  font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: .008em;
+  z-index:100;
+  margin: 1.5em 0 0 0;
+  clear:both
 }
 
 h4 {
   margin-top: -2rem;
-
   font-size: 1.236rem;
   font-style: italic;
 }
@@ -419,8 +427,24 @@ font-family: var(--primary-font);
 .swiper-pagination-bullet {
   background-color: var(--text-color);
   opacity:.5;
+  padding:.25em;
+  background-clip: content-box;
 }
 .swiper-pagination-bullet-active {
   background-color: var(--title-color);
   opacity:1;
+}
+.swiper-container-vertical>.swiper-pagination-bullets {
+display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    }
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin:0;
+}
+iframe{
+  width: 95vw;
+  height: 95vh;
 }

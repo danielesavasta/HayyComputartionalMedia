@@ -203,17 +203,22 @@ function initDrawer() {
 /* ---------- Main start ---------- */
 /* ---------- Main start ---------- */
 async function start() {
+
   var mdText = document.getElementById("markdown").innerHTML;
   var md = window.markdownit();
   md.set({ html: true, breaks: true, typographer: true });
   var container = window.markdownitContainer;
+  /*var markdownItAttrs = window.markdownItAttrs || window.markdownitAttrs;
+  if (markdownItAttrs) {
+    md.use(markdownItAttrs);
+  }*/
   md.use(container, 'swiper-slide', {
     render: function (tokens, idx) {
       var token = tokens[idx];
       var info = token.info.trim().split(/\s+/);
       var customClass = info.slice(1).join(' ');
       if (token.nesting === 1) {
-        return '<div class="swiper-slide' + (customClass ? ' ' + customClass : '') + '">\n';
+        return '<div class="swiper-slide' + (customClass ? ' ' + customClass : '') + '\">\n';
       } else {
         return '</div>\n';
       }
@@ -295,10 +300,10 @@ function slideFix() {
     let content = slides[i].innerHTML;
     slides[i].innerHTML = "<div class='slideContent'>" + content + "</div>";
   }
+  //splith1();
   removeparagraphs();
-  splittext();
-  splith1();
   wrapImagesInFigure();
+  //splittext();
 }
 
 // wrap all images in figure tags
