@@ -1,55 +1,113 @@
+::: swiper-slide cover
+
+# New Media and Generative Thinking
+
+#### Phase 2
+
+#### Daniele Savasta / Ege Canpolat
+
+##### Hayy Açık Okul
+
+:::
+
+::: swiper-slide
+
+# Generative Creativity
+
+The artist designs a system and allows that system to produce outcomes with a degree of autonomy. Not controlling the result but designing the conditions.
+
+Galanter's definition: the author creates a system and cedes a degree of control to it. Directly connected to Manovich's principle of automation: when media becomes numerical, it becomes open to rule-based processes that operate with partial independence from the author.
+
+:::
+
+::: swiper-slide
+
+## Common Anatomy: Input / Process / Output
+
+<svg class="flow-svg" viewBox="0 0 760 185" xmlns="http://www.w3.org/2000/svg">
+<text x="40" y="76" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="currentColor" opacity="0.4">WORLD</text>
+<line x1="68" y1="73" x2="116" y2="73" stroke="currentColor" stroke-width="1.5"/>
+<polygon points="116,68 126,73 116,78" fill="currentColor"/>
+<rect x="128" y="48" width="110" height="50" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="183" y="78" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="currentColor">INPUT</text>
+<line x1="240" y1="73" x2="286" y2="73" stroke="currentColor" stroke-width="1.5"/>
+<polygon points="286,68 296,73 286,78" fill="currentColor"/>
+<rect x="298" y="48" width="135" height="50" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="365" y="78" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="currentColor">PROCESS</text>
+<line x1="435" y1="73" x2="481" y2="73" stroke="currentColor" stroke-width="1.5"/>
+<polygon points="481,68 491,73 481,78" fill="currentColor"/>
+<rect x="493" y="48" width="115" height="50" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="550" y="78" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="currentColor">OUTPUT</text>
+<line x1="610" y1="73" x2="656" y2="73" stroke="currentColor" stroke-width="1.5"/>
+<polygon points="656,68 666,73 656,78" fill="currentColor"/>
+<text x="702" y="76" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="currentColor" opacity="0.4">WORLD</text>
+<path d="M 606 98 L 606 148 L 130 148 L 130 98" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.55"/>
+<polygon points="125,100 130,90 135,100" fill="currentColor" opacity="0.55"/>
+<text x="368" y="163" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="currentColor" opacity="0.45">FEEDBACK</text>
+</svg>
+
+**Input:** what the world gives the system: human presence, sensor data, image, sound.
+
+**Process:** the rule the system applies: code, model, node-based flow, microcontroller logic.
+
+**Output:** what the system gives back: light, sound, image, movement, heat, smoke.
+
+**Feedback:** output becoming input again. The system watches itself and adjusts.
+
+:::
+
 ::: swiper-slide
 
 <div class="map-slide">
-  <h3 class="map-title">Generative/Computational Media Map</h3>
+  <h3 class="map-title">Generative Creation Map</h3>
 
   <div class="map-entry-row">
-    <div class="map-node entry" onclick="swiperInstance.slideTo(1,400)">Media Anatomy</div>
+    <div class="map-node entry" onclick="swiperInstance.slideTo(4,400)">Media Anatomy</div>
   </div>
   
   <div class="map-row">
     <div class="map-label">Foundation<br>Principles</div>
     <div class="map-cards">
-      <div class="map-node" onclick="swiperInstance.slideTo(2,400)">Numerical Representation</div>
-      <div class="map-node" onclick="swiperInstance.slideTo(3,400)">Procedurality</div>
-      <div class="map-node" onclick="swiperInstance.slideTo(4,400)">Crossing Senses / Intermediality</div>
-      <div class="map-node" onclick="swiperInstance.slideTo(5,400)">Co-existence</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(5,400)">Numerical Representation</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(6,400)">Procedurality</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(7,400)">Crossing Senses / Intermediality</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(8,400)">Co-existence</div>
     </div>
   </div>
   
   <div class="map-row">
     <div class="map-label">Properties</div>
     <div class="map-cards">
-      <div class="map-node" onclick="swiperInstance.slideTo(6,400)">Generativity / Variation</div>
-      <div class="map-node" onclick="swiperInstance.slideTo(7,400)">Modularity / Repetition</div>
-      <div class="map-node" onclick="swiperInstance.slideTo(8,400)">Connectivity / Network</div>
-      <div class="map-node" onclick="swiperInstance.slideTo(9,400)">Limits</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(9,400)">Generativity / Variation</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(10,400)">Modularity / Repetition</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(11,400)">Connectivity / Network</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(12,400)">Limits</div>
     </div>
   </div>
   
   <div class="map-row">
     <div class="map-label">Process</div>
     <div class="map-cards">
-      <div class="map-node process" onclick="swiperInstance.slideTo(10,400)">Profanation / Appropriation</div>
-      <div class="map-node process" onclick="swiperInstance.slideTo(11,400)">Alea / Abandon</div>
-      <div class="map-node process" onclick="swiperInstance.slideTo(12,400)">Randomness / Chaos / Accident / Entropy</div>
+      <div class="map-node process" onclick="swiperInstance.slideTo(13,400)">Profanation / Appropriation</div>
+      <div class="map-node process" onclick="swiperInstance.slideTo(14,400)">Alea / Abandon</div>
+      <div class="map-node process" onclick="swiperInstance.slideTo(15,400)">Randomness / Chaos / Accident / Entropy</div>
     </div>
   </div>
   
   <div class="map-row">
     <div class="map-label">Meaning<br>Making</div>
     <div class="map-cards">
-      <div class="map-node" onclick="swiperInstance.slideTo(13,400)">Text as Meaning / Poetic Computation</div>
-      <div class="map-node" onclick="swiperInstance.slideTo(14,400)">Interaction Ecology</div>
-      <div class="map-node" onclick="swiperInstance.slideTo(15,400)">Lore</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(16,400)">Text as Meaning / Poetic Computation</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(17,400)">Interaction Ecology</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(18,400)">Lore</div>
     </div>
   </div>
   
   <div class="map-row">
     <div class="map-label">Tools</div>
     <div class="map-cards">
-      <div class="map-node" onclick="swiperInstance.slideTo(16,400)">p5.js / Processing</div>
-      <div class="map-node" onclick="swiperInstance.slideTo(17,400)">Sensors / Hardware / Software / Network</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(19,400)">p5.js / Processing</div>
+      <div class="map-node" onclick="swiperInstance.slideTo(20,400)">Sensors / Hardware / Software / Network</div>
     </div>
   </div>
 </div>
@@ -369,4 +427,12 @@ This is where the system touches the world. A sensor reads the environment; soft
  - https://www.benfry.com/
  - https://nohlab.com/
  - https://link.bagerakbay.com/
+:::
+
+::: swiper-slide
+
+## Keywords
+
+Authorship, Cession, Multiplicity, Alea, Procedurality, Cohabitation, Profanation, Emergence, Corpus, Numericity, Abandonment, Displacement, Autonomy, Instruction, Possibility space, Serendipity, Choreography, Negotiation, Skin, Gesture, Lore, Glitch, Interoperability, Feedback, Topology, Intermediality, Notation, Diffusion, Threshold, Nonhuman, Actuator, Infestation, Register, Inscription, Ecology, Drift, Contingency, Rewilding, Artifact, Transmediality, Instinct, Protocol, Flocking, Attractor, Mediation, Self-organization, Apparatus, Leakage, Camouflage, Residue, Terrain, Phantom, Modulation, Rule, Semiosis, Stochasticity, Porosity, Sympoiesis, Erosion, Recursion, Relay, Incompleteness, Materiality, Intersubjectivity, Scaffold, Decay, Propagation, Underdetermination, Contamination, Aleatory, Hauntology, Palimpsest, Morphogenesis, Trace, Archive, Membrane, Enactivism, Noise, Situated, Hybridization, Uncanny, Overgrowth, Embodiment, Distributed, Becoming, Performativity, Signal, Indeterminacy, Coexistence, Mutation, Mesh, Rhizome, Dissipation, Spectrality, Intertextuality, Ergodic, Fragmentation, Oscillation, Sediment
+
 :::
