@@ -31,7 +31,7 @@
     <div class="map-label">Process</div>
     <div class="map-cards">
       <div class="map-node process" onclick="swiperInstance.slideTo(10,400)">Profanation / Appropriation</div>
-      <div class="map-node process" onclick="swiperInstance.slideTo(11,400)">Edit / Abandon</div>
+      <div class="map-node process" onclick="swiperInstance.slideTo(11,400)">Alea / Abandon</div>
       <div class="map-node process" onclick="swiperInstance.slideTo(12,400)">Randomness / Chaos / Accident / Entropy</div>
     </div>
   </div>
@@ -73,6 +73,11 @@ Every digital media object (image, sound, video, interactive system) shares the 
 Every media object consists of digital code: mathematically definable, open to algorithmic manipulation. Media becomes programmable.
 
 A photograph is a grid of numbers. A sound is a sequence of values. This numerical nature means any media object can be transformed, generated, or combined algorithmically.
+
+:::
+
+::: swiper-slide
+<iframe src="http://dada.compart-bremen.de/item/agent/15" width="100%" height="100%"></iframe>
 
 :::
 
@@ -176,7 +181,7 @@ The same material, made to mean something else.
 
 ##### Process
 
-# Edit / Abandon
+# Alea / Abandon
 
 The generative process produces more than you intend. At some point: intervene and edit, or abandon and let the system run again.
 

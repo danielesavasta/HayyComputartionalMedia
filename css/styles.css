@@ -411,3 +411,16 @@ font-family: var(--primary-font);
   margin-bottom: 0.3rem;
 }
 
+/* first row of the hierarchy map */
+.swiper-pagination-bullet:nth-child(1) {
+  border-radius: 0;
+  scale:1.5;
+}
+.swiper-pagination-bullet {
+  background-color: var(--text-color);
+  opacity:.5;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--title-color);
+  opacity:1;
+}
